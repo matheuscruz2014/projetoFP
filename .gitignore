@@ -7,7 +7,7 @@ man
 share
 Scripts
 .Python
-*~
-.DS_Store
-*.sqlite3
 *.pyc
+*~
+*.sqlite3
+.DS_Store

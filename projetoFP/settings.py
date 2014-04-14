@@ -1,11 +1,6 @@
-"""
-Django settings for projetoFP project.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/1.6/topics/settings/
-
-For the full list of settings and their values, see
-https://docs.djangoproject.com/en/1.6/ref/settings/
+""" 
+@edsonlb
+https://www.facebook.com/groups/pythonmania/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -17,7 +12,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'w&ww@c89&fx9w+hg+s0d7ele2&9e0ig6*n7%0*xj(g3mexdgg!'
+SECRET_KEY = 'nz4v!uqn!t8g@czh%twe*hoj9e(fi@yii*4uk9iy@pyw8p-mf_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -26,9 +21,7 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
-
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
