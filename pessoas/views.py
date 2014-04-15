@@ -1,8 +1,6 @@
-# This Python file uses the following encoding: utf-8
-# ANOTAÇÃO PARA USAR CARACTERES ESPECIAIS AQUI. (MESMO PARA ANOTAÇÕES.)
-""" 
-@edsonlb
-https://www.facebook.com/groups/pythonmania/
+"""
+@guilherme garcia silva
+@guilhermesilva5
 """
 
 from django.shortcuts import render, HttpResponseRedirect

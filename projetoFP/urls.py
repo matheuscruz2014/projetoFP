@@ -1,6 +1,6 @@
-""" 
-@edsonlb
-https://www.facebook.com/groups/pythonmania/
+"""
+@guilherme garcia silva
+@guilhermesilva5
 """
 
 from django.conf.urls import patterns, include, url
@@ -12,4 +12,6 @@ urlpatterns = patterns('',
     url(r'^$', 'pessoas.views.index'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^pessoas/', include('pessoas.urlsPessoas')),
+    url(r'^$', 'caixas.views.index'),
+    url(r'^caixas/', include('caixas.urlsCaixas')),
 )

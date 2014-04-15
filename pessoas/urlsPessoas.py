@@ -1,6 +1,6 @@
-""" 
-@edsonlb
-https://www.facebook.com/groups/pythonmania/
+"""
+@guilherme garcia silva
+@guilhermesilva5
 """
 
 from django.conf.urls import patterns, include, url
