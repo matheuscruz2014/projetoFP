@@ -1,8 +1,3 @@
-"""
-@guilherme garcia silva
-@guilhermesilva5
-"""
-
 from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('pessoas.views',

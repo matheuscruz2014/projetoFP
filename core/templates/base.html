@@ -1,10 +1,3 @@
-<!-- 
-
-@guilherme garcia silva
-@guilhermesilva5
-
--->
-
 {% load staticfiles %} <!-- PARA USAR O CAMINHO PADRAO STATIC_URL -->
 
 <!DOCTYPE html>
@@ -33,14 +26,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">Financeiro Pessoal</a>
+          <a class="navbar-brand" style="color:#fff;" href="/"><span class="glyphicon glyphicon-list-alt"></span> Financeiro Pessoal</a>
         </div>
 
         <div class="collapse navbar-collapse" id="IDnavbar">
           <ul class="nav navbar-nav">
-            <li><a href="/pessoas/"> <spam class="glyphicon glyphicon-user"></spam> Pessoas</a></li>
-            <li><a href="/caixas/"> <spam class="glyphicon glyphicon-inbox"></spam> Contas</a></li>
-            <li><a href="#"> <spam class="glyphicon glyphicon-stats"></spam> Fluxo de Caixa</a></li>
+            <li><a href="/pessoas/"> <span class="glyphicon glyphicon-user"></span> Pessoas</a></li>
+            <li><a href="/caixas/"> <span class="glyphicon glyphicon-inbox"></span> Contas</a></li>
+            <li><a href="#"> <span class="glyphicon glyphicon-stats"></span> Fluxo de Caixa</a></li>    
+            <li><a href="#"> <span class="glyphicon glyphicon-cog"></span> Configuracao</a></li>             
+            <li><a>Olá <b>Matheus</b>!</a></li>
+            <li><a href="#" class="glyphicon glyphicon-off" title="Sair do Sistema" style="font-size:18px;"></a></li>
           </ul>
         </div>
       </div>
@@ -58,7 +54,7 @@
 
     <!-- RODAPE -->
     <footer>
-      <div align="center">&copy; Guilherme Garcia</div>
+      <div align="center">&copy; Sistema Financeiro - powered by matheus cruz</div>
     </footer>
     <!-- FIM RODAPE -->
 
