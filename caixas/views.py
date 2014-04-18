@@ -5,16 +5,16 @@ from caixas.models import Caixa
 def index(request):
     return render(request, 'index.html')
 
-def caixaListar(request):
+def listarCaixas(request):
     caixas = Caixa.objects.all()[0:10]
 
     return render(request, 'caixas/listaCaixas.html', {'caixas': caixas})
 
 
-def caixaAdicionar(request):
+def inserirCaixa(request):
     return render(request, 'caixas/formCaixas.html')
 
-def caixaSalvar(request):
+def salvarCaixa(request):
     if request.method == 'POST':
         codigo = request.POST.get('codigo', '0')
 
@@ -33,7 +33,7 @@ def caixaSalvar(request):
         caixa.save()
     return HttpResponseRedirect('/caixas/')
 
-def caixaPesquisar(request):
+def pesquisarCaixa(request):
     if request.method == 'POST':
         textoBusca = request.POST.get('textoBusca', 'TUDO').upper()
 
@@ -52,7 +52,7 @@ def caixaPesquisar(request):
 
         return render(request, 'caixas/listaCaixas.html', {'caixas': caixas, 'textoBusca': textoBusca})
 
-def caixaEditar(request, pk=0):
+def editarCaixa(request, pk=0):
     try:
         caixa = Caixa.objects.get(pk=pk)
     except:
@@ -60,7 +60,7 @@ def caixaEditar(request, pk=0):
 
     return render(request, 'caixas/formCaixas.html', {'caixa': caixa})
 
-def caixaExcluir(request, pk=0):
+def excluirCaixa(request, pk=0):
     try:
         caixa = Caixa.objects.get(pk=pk)
         caixa.delete()
